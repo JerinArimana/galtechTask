@@ -1,0 +1,107 @@
+.footer_section {
+  position: relative;
+
+  &__menu {
+    background-color: $quaternary-color;
+    padding: 4rem 0rem;
+  }
+  &__input_wrapper {
+  }
+  .item_div {
+    display: flex;
+    gap: 1rem;
+    .form-control {
+      background-color: unset;
+      border: 1px solid white;
+      border-radius: 2rem;
+      color: white;
+      padding: 0.5rem 2rem;
+      &::placeholder {
+        color: white;
+      }
+    }
+    button {
+      width: 60px;
+      height: 50px;
+      background-color: unset;
+      border-radius: 100%;
+      border: 1px solid white;
+      svg {
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+  &__contactInfo {
+    color: white;
+    max-width: 500px;
+    label {
+      font-size: 0.78rem;
+    }
+    h3 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+  &__menuItem {
+    h5 {
+      color: $primary;
+    }
+    ul {
+      margin: 0rem;
+      padding: 0rem;
+      list-style: none;
+      color: white;
+      li {
+        span {
+          margin-right: 0.5rem;
+          svg {
+            path {
+              fill: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__copy_right {
+    background-color: $primary;
+    padding: 0.5rem 0rem;
+  }
+  &__copy_right_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media ($mobile) {
+      flex-direction: column;
+    }
+    ul {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      margin: 0rem;
+      padding: 0rem;
+      list-style: none;
+      justify-content: center;
+
+      li {
+        color: $quaternary-color;
+      }
+    }
+    p {
+      margin: 0rem;
+      padding: 0rem;
+      color: $quaternary-color;
+      text-align: center;
+    }
+  }
+  &__menuItem {
+    @media ($mobile) {
+      margin-bottom: 2rem;
+    }
+  }
+}

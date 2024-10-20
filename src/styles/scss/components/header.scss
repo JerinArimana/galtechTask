@@ -1,0 +1,57 @@
+.header {
+  &__top_nav {
+    background-color: $primary;
+    padding: 0.3rem 0rem;
+    text-align: center;
+    p {
+      margin: 0rem;
+      padding: 0rem;
+      color: $tertiary;
+    }
+  }
+  &__nav_wrapper {
+    padding: 1rem 0rem;
+    img {
+      width: 150px;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__menu {
+    justify-content: center !important;
+    text-align: center;
+    position: relative;
+    @media ($upto-medium) {
+      display: none;
+    }
+    .navbar-nav {
+      a {
+        color: $quaternary-color;
+      }
+    }
+  }
+  &__cartBox {
+    position: absolute;
+    right: 0rem;
+    gap: 2rem;
+    display: flex;
+
+    span {
+      svg {
+        path {
+          fill: $quaternary-color;
+        }
+      }
+    }
+  }
+}
+
+// .header__menu {
+//   justify-content: center !important;
+// }
+
+.mobileMenu {
+  .nav {
+    flex-direction: column;
+  }
+}
